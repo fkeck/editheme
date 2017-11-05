@@ -1,0 +1,218 @@
+theme,theme_name,rule,value
+ambiance,Ambiance,comment,#555555
+ambiance,Ambiance,const_lang,#CF7EA9
+ambiance,Ambiance,base_text,#E6E1DC
+ambiance,Ambiance,background,#202020
+ambiance,Ambiance,keyword,#CDA869
+ambiance,Ambiance,operator,#FA8D6A
+ambiance,Ambiance,string,#8F9D6A
+chaos,Chaos,comment,#555555
+chaos,Chaos,const_lang,#FDC251
+chaos,Chaos,background,#161616
+chaos,Chaos,base_text,#E6E1DC
+chaos,Chaos,keyword,#00698F
+chaos,Chaos,operator,#FF308F
+chaos,Chaos,string,#58C554
+chrome,Chrome,comment,#236E24
+chrome,Chrome,const_lang,#585CF6
+chrome,Chrome,background,#FFFFFF
+chrome,Chrome,base_text,#000000
+chrome,Chrome,keyword,#930F80
+chrome,Chrome,operator,#687687
+chrome,Chrome,string,#1A1AA6
+clouds,Clouds,comment,#BCC8BA
+clouds,Clouds,const_lang,#39946A
+clouds,Clouds,background,#FFFFFF
+clouds,Clouds,base_text,#000000
+clouds,Clouds,keyword,#800080
+clouds,Clouds,operator,#888888
+clouds,Clouds,string,#5D90CD
+clouds_midnight,Clouds Midnight,comment,#3C403B
+clouds_midnight,Clouds Midnight,const_lang,#39946A
+clouds_midnight,Clouds Midnight,background,#191919
+clouds_midnight,Clouds Midnight,base_text,#929292
+clouds_midnight,Clouds Midnight,keyword,#927C5D
+clouds_midnight,Clouds Midnight,operator,#A53553
+clouds_midnight,Clouds Midnight,string,#5D90CD
+cobalt,Cobalt,comment,#0088FF
+cobalt,Cobalt,const_lang,#FF628C
+cobalt,Cobalt,background,#002240
+cobalt,Cobalt,base_text,#FFFFFF
+cobalt,Cobalt,keyword,#FF9D00
+cobalt,Cobalt,operator,#BED6FF
+cobalt,Cobalt,string,#3AD900
+crimson_editor,Crimson Editor,comment,#4C886B
+crimson_editor,Crimson Editor,const_lang,#FF9C00
+crimson_editor,Crimson Editor,background,#FFFFFF
+crimson_editor,Crimson Editor,base_text,#404040
+crimson_editor,Crimson Editor,keyword,#0000FF
+crimson_editor,Crimson Editor,operator,#318495
+crimson_editor,Crimson Editor,string,#800080
+dawn,Dawn,comment,#5A525F
+dawn,Dawn,const_lang,#811F24
+dawn,Dawn,background,#F9F9F9
+dawn,Dawn,base_text,#080808
+dawn,Dawn,keyword,#794938
+dawn,Dawn,operator,#888888
+dawn,Dawn,string,#0B6125
+dracula,Dracula,comment,#6272A4
+dracula,Dracula,const_lang,#BD93F9
+dracula,Dracula,background,#282A36
+dracula,Dracula,base_text,#F8F8F2
+dracula,Dracula,keyword,#FF79C6
+dracula,Dracula,operator,#81A2BE
+dracula,Dracula,string,#F1FA8C
+dreamweaver,Dreamweaver,comment,#4C886B
+dreamweaver,Dreamweaver,const_lang,#585CF6
+dreamweaver,Dreamweaver,background,#FFFFFF
+dreamweaver,Dreamweaver,base_text,#000000
+dreamweaver,Dreamweaver,keyword,#0000FF
+dreamweaver,Dreamweaver,operator,#687687
+dreamweaver,Dreamweaver,string,#0000FF
+eclipse,Eclipse,comment,#719682
+eclipse,Eclipse,const_lang,#000000
+eclipse,Eclipse,background,#FFFFFF
+eclipse,Eclipse,base_text,#000000
+eclipse,Eclipse,keyword,#800080
+eclipse,Eclipse,operator,#888888
+eclipse,Eclipse,string,#2A00FF
+idle_fingers,Idle Fingers,comment,#BC9458
+idle_fingers,Idle Fingers,const_lang,#6C99BB
+idle_fingers,Idle Fingers,background,#323232
+idle_fingers,Idle Fingers,base_text,#FFFFFF
+idle_fingers,Idle Fingers,keyword,#CC7833
+idle_fingers,Idle Fingers,operator,#6892B2
+idle_fingers,Idle Fingers,string,#A5C261
+katzenmilch,Katzenmilch,comment,#7F898A
+katzenmilch,Katzenmilch,const_lang,#7D7E52
+katzenmilch,Katzenmilch,background,#F3F2F3
+katzenmilch,Katzenmilch,base_text,#0F0009
+katzenmilch,Katzenmilch,keyword,#674AA8
+katzenmilch,Katzenmilch,operator,#888888
+katzenmilch,Katzenmilch,string,#5A5F9B
+kr_theme,Kr Theme,comment,#706D5B
+kr_theme,Kr Theme,const_lang,#D27518
+kr_theme,Kr Theme,background,#0B0A09
+kr_theme,Kr Theme,base_text,#FCFFE0
+kr_theme,Kr Theme,keyword,#949C8B
+kr_theme,Kr Theme,operator,#A56464
+kr_theme,Kr Theme,string,#A4A1B5
+material,Material,comment,#707880
+material,Material,const_lang,#9D94BB
+material,Material,background,#263238
+material,Material,base_text,#C5C8C6
+material,Material,keyword,#DE935F
+material,Material,operator,#81A2BE
+material,Material,string,#B5BD68
+merbivore,Merbivore,comment,#AD2EA4
+merbivore,Merbivore,const_lang,#FDC251
+merbivore,Merbivore,background,#161616
+merbivore,Merbivore,base_text,#E6E1DC
+merbivore,Merbivore,keyword,#FC6F09
+merbivore,Merbivore,operator,#AAAAAA
+merbivore,Merbivore,string,#8DFF0A
+merbivore_soft,Merbivore Soft,comment,#AC4BB8
+merbivore_soft,Merbivore Soft,const_lang,#E1C582
+merbivore_soft,Merbivore Soft,background,#1C1C1C
+merbivore_soft,Merbivore Soft,base_text,#E6E1DC
+merbivore_soft,Merbivore Soft,keyword,#FC803A
+merbivore_soft,Merbivore Soft,operator,#AAAAAA
+merbivore_soft,Merbivore Soft,string,#8EC65F
+mono_industrial,Mono Industrial,comment,#666C68
+mono_industrial,Mono Industrial,const_lang,#E98800
+mono_industrial,Mono Industrial,background,#222C28
+mono_industrial,Mono Industrial,base_text,#FFFFFF
+mono_industrial,Mono Industrial,keyword,#A39E64
+mono_industrial,Mono Industrial,operator,#A8B3AB
+mono_industrial,Mono Industrial,string,#FFFFFF
+monokai,Monokai,comment,#75715E
+monokai,Monokai,const_lang,#AE81FF
+monokai,Monokai,background,#272822
+monokai,Monokai,base_text,#F8F8F2
+monokai,Monokai,keyword,#F92672
+monokai,Monokai,operator,#AAAAAA
+monokai,Monokai,string,#E6DB74
+pastel_on_dark,Pastel On Dark,comment,#A6C6FF
+pastel_on_dark,Pastel On Dark,const_lang,#DE8E30
+pastel_on_dark,Pastel On Dark,background,#2C2828
+pastel_on_dark,Pastel On Dark,base_text,#EAEAEA
+pastel_on_dark,Pastel On Dark,keyword,#757AD8
+pastel_on_dark,Pastel On Dark,operator,#AAAAAA
+pastel_on_dark,Pastel On Dark,string,#66A968
+solarized_dark,Solarized Dark,comment,#657B83
+solarized_dark,Solarized Dark,const_lang,#B58900
+solarized_dark,Solarized Dark,background,#002B36
+solarized_dark,Solarized Dark,base_text,#93A1A1
+solarized_dark,Solarized Dark,keyword,#859900
+solarized_dark,Solarized Dark,operator,#B58900
+solarized_dark,Solarized Dark,string,#2AA198
+solarized_light,Solarized Light,comment,#93A1A1
+solarized_light,Solarized Light,const_lang,#B58900
+solarized_light,Solarized Light,background,#FDF6E3
+solarized_light,Solarized Light,base_text,#586E75
+solarized_light,Solarized Light,keyword,#859900
+solarized_light,Solarized Light,operator,#93A1A1
+solarized_light,Solarized Light,string,#2AA198
+textmate,TextMate,comment,#4C886B
+textmate,TextMate,const_lang,#585CF6
+textmate,TextMate,background,#FFFFFF
+textmate,TextMate,base_text,#000000
+textmate,TextMate,keyword,#0000FF
+textmate,TextMate,operator,#687687
+textmate,TextMate,string,#036A07
+tomorrow,Tomorrow,comment,#8E908C
+tomorrow,Tomorrow,const_lang,#F5871F
+tomorrow,Tomorrow,background,#FFFFFF
+tomorrow,Tomorrow,base_text,#4D4D4C
+tomorrow,Tomorrow,keyword,#8959A8
+tomorrow,Tomorrow,operator,#3E999F
+tomorrow,Tomorrow,string,#718C00
+tomorrow_night,Tomorrow Night,comment,#969896
+tomorrow_night,Tomorrow Night,const_lang,#DE935F
+tomorrow_night,Tomorrow Night,background,#1D1F21
+tomorrow_night,Tomorrow Night,base_text,#C5C8C6
+tomorrow_night,Tomorrow Night,keyword,#B294BB
+tomorrow_night,Tomorrow Night,operator,#8ABEB7
+tomorrow_night,Tomorrow Night,string,#B5BD68
+tomorrow_night_blue,Tomorrow Night 80s,comment,#7285B7
+tomorrow_night_blue,Tomorrow Night 80s,const_lang,#FFC58F
+tomorrow_night_blue,Tomorrow Night 80s,background,#002451
+tomorrow_night_blue,Tomorrow Night 80s,base_text,#FFFFFF
+tomorrow_night_blue,Tomorrow Night 80s,keyword,#EBBBFF
+tomorrow_night_blue,Tomorrow Night 80s,operator,#99FFFF
+tomorrow_night_blue,Tomorrow Night 80s,string,#D1F1A9
+tomorrow_night_bright,Tomorrow Night Blue,comment,#969896
+tomorrow_night_bright,Tomorrow Night Blue,const_lang,#E78C45
+tomorrow_night_bright,Tomorrow Night Blue,background,#000000
+tomorrow_night_bright,Tomorrow Night Blue,base_text,#DEDEDE
+tomorrow_night_bright,Tomorrow Night Blue,keyword,#C397D8
+tomorrow_night_bright,Tomorrow Night Blue,operator,#70C0B1
+tomorrow_night_bright,Tomorrow Night Blue,string,#B9CA4A
+tomorrow_night_eighties,Tomorrow Night Bright,comment,#999999
+tomorrow_night_eighties,Tomorrow Night Bright,const_lang,#F99157
+tomorrow_night_eighties,Tomorrow Night Bright,background,#2D2D2D
+tomorrow_night_eighties,Tomorrow Night Bright,base_text,#CCCCCC
+tomorrow_night_eighties,Tomorrow Night Bright,keyword,#CC99CC
+tomorrow_night_eighties,Tomorrow Night Bright,operator,#66CCCC
+tomorrow_night_eighties,Tomorrow Night Bright,string,#99CC99
+twilight,Twilight,comment,#5F5A60
+twilight,Twilight,const_lang,#CF6A4C
+twilight,Twilight,background,#141414
+twilight,Twilight,base_text,#F8F8F8
+twilight,Twilight,keyword,#CDA869
+twilight,Twilight,operator,#7587A6
+twilight,Twilight,string,#8F9D6A
+vibrant_ink,Vibrant Ink,comment,#9933CC
+vibrant_ink,Vibrant Ink,const_lang,#339999
+vibrant_ink,Vibrant Ink,background,#0F0F0F
+vibrant_ink,Vibrant Ink,base_text,#FFFFFF
+vibrant_ink,Vibrant Ink,keyword,#FF6600
+vibrant_ink,Vibrant Ink,operator,#AAAAAA
+vibrant_ink,Vibrant Ink,string,#66FF00
+xcode,Xcode,comment,#008E00
+xcode,Xcode,const_lang,#C800A4
+xcode,Xcode,background,#FFFFFF
+xcode,Xcode,base_text,#000000
+xcode,Xcode,keyword,#C800A4
+xcode,Xcode,operator,#888888
+xcode,Xcode,string,#DF0002
