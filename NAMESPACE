@@ -2,6 +2,9 @@
 
 export(get_pal)
 export(list_pal)
+export(scale_color_editor)
+export(scale_colour_editor)
+export(scale_fill_editor)
 export(set_base_sty)
 export(theme_editor)
 export(viz_pal)

@@ -1,13 +1,14 @@
 
 
 
-#' Theme for \code{ggplot2}
+#' Theme and color scales for \code{ggplot2}
 #'
 #' @inheritParams ggplot2::theme_grey
 #' @param theme A string corresponding to one of the 31 themes available in RStudio (see \code{\link{list_pal}}).
 #' If not specified, the function tries to retrieve the active theme using \pkg{rstudioapi}.
 #'
 #' @export
+#' @rdname ggplot_theme
 #'
 #' @examples
 #'
@@ -30,6 +31,16 @@
 #'   theme_editor() +
 #'   scale_fill_editor()
 #'
+#' for(i in list_pal()){
+#'  p <- ggplot(iris, aes(Sepal.Length, Petal.Length)) +
+#'   geom_point(color = col_fg(theme = i, fade = 0.2)) +
+#'   geom_smooth(color = get_pal(theme = i)[1], fill = get_pal(theme = i)[2]) +
+#'   labs(title = i, caption = "edistyle v.0.1.0") +
+#'   theme_editor(theme = i) +
+#'   scale_fill_editor(theme = i)
+#'   print(p)
+#' }
+#'
 theme_editor <- function(theme = NA, base_size = 10, base_family = "sans"){
 
   pal <- get_pal(theme)
@@ -37,7 +48,7 @@ theme_editor <- function(theme = NA, base_size = 10, base_family = "sans"){
   col_fg <- col_fg(theme)
 
   theme_classic(base_family = base_family, base_size = base_size) +
-    theme(plot.background = element_rect(fill = col_bg),
+    theme(plot.background = element_rect(fill = col_bg, colour = NA),
           panel.background = element_rect(fill = col_bg, colour = NA),
           axis.line = element_line(colour = col_fg),
           axis.ticks = element_line(colour = col_fg),
@@ -51,13 +62,19 @@ theme_editor <- function(theme = NA, base_size = 10, base_family = "sans"){
           )
 }
 
-
+#' @inheritParams ggplot2::scale_colour_hue
+#' @export
+#' @rdname ggplot_theme
 scale_fill_editor <- function(theme = NA, ...) {
   discrete_scale("fill", "editor", scales::manual_pal(unname(get_pal(theme = theme))), ...)
 }
 
+#' @export
+#' @rdname ggplot_theme
 scale_colour_editor <- function(theme = NA, ...) {
   discrete_scale("colour", "editor", scales::manual_pal(unname(get_pal(theme = theme))), ...)
 }
 
+#' @export
+#' @rdname ggplot_theme
 scale_color_editor <- scale_colour_editor

@@ -2,9 +2,18 @@
 % Please edit documentation in R/gg_theme.R
 \name{theme_editor}
 \alias{theme_editor}
-\title{Theme for \code{ggplot2}}
+\alias{scale_fill_editor}
+\alias{scale_colour_editor}
+\alias{scale_color_editor}
+\title{Theme and color scales for \code{ggplot2}}
 \usage{
 theme_editor(theme = NA, base_size = 10, base_family = "sans")
+
+scale_fill_editor(theme = NA, ...)
+
+scale_colour_editor(theme = NA, ...)
+
+scale_color_editor(theme = NA, ...)
 }
 \arguments{
 \item{theme}{A string corresponding to one of the 31 themes available in RStudio (see \code{\link{list_pal}}).
@@ -13,9 +22,12 @@ If not specified, the function tries to retrieve the active theme using \pkg{rst
 \item{base_size}{base font size}
 
 \item{base_family}{base font family}
+
+\item{...}{Other arguments passed on to \code{\link{discrete_scale}}
+to control name, limits, breaks, labels and so forth.}
 }
 \description{
-Theme for \code{ggplot2}
+Theme and color scales for \code{ggplot2}
 }
 \examples{
 
