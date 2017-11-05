@@ -35,7 +35,7 @@
 #'
 #' list_pal()
 #' my_pal <- get_pal(theme = "Twilight")
-#' viz_pal(my_pal)
+#' viz_pal(my_pal, print.hex = TRUE)
 #'
 #' par(mfrow = c(7, 5))
 #' for(i in list_pal()) {viz_pal(get_pal(i))}
@@ -82,18 +82,24 @@ list_pal <- function(){
 
 #' @export
 #' @rdname color_palette
-viz_pal <- function(pal){
+viz_pal <- function(pal, print.ribbon = TRUE, print.hex = FALSE){
   n <- length(pal)
   old <- par(mar = rep(1, 4), bg = attr(pal, "background"))
   on.exit(par(old))
 
   image(1:n, 1, as.matrix(1:n), col = pal,
-        ylab = "", xaxt = "n", yaxt = "n", bty = "n")
+        ylab = "", bty = "n", xaxt = "n", yaxt = "n")
 
-  rect(0, 0.9, n + 1, 1.1,
-       col = rgb(t(col2rgb(attr(pal, "background"))), alpha = 0.8 * 255, maxColorValue = 255),
-       border = NA)
-  text((n + 1) / 2, 1, labels = attr(pal, "theme"), col = attr(pal, "base_text"))
+  if(print.ribbon){
+    rect(0, 0.9, n + 1, 1.1,
+         col = rgb(t(col2rgb(attr(pal, "background"))), alpha = 0.8 * 255, maxColorValue = 255),
+         border = NA)
+    text((n + 1) / 2, 1, labels = attr(pal, "theme"), col = attr(pal, "base_text"))
+  }
+
+  if(print.hex){
+    text(1:n, 0.7, labels = pal, cex = 0.8, adj = 0.5, col = attr(pal, "background"))
+  }
 }
 
 
