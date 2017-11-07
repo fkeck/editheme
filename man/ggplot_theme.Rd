@@ -50,4 +50,14 @@ ggplot(iris, aes(Sepal.Length, Petal.Length)) +
   theme_editor() +
   scale_fill_editor()
 
+for(i in list_pal()){
+ p <- ggplot(iris, aes(Sepal.Length, Petal.Length)) +
+  geom_point(color = col_fg(theme = i, fade = 0.2)) +
+  geom_smooth(color = get_pal(theme = i)[1], fill = get_pal(theme = i)[2]) +
+  labs(title = i, caption = "edistyle v.0.1.0") +
+  theme_editor(theme = i) +
+  scale_fill_editor(theme = i)
+  print(p)
+}
+
 }

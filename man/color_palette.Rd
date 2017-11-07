@@ -10,7 +10,7 @@ get_pal(theme = NA, n)
 
 list_pal()
 
-viz_pal(pal)
+viz_pal(pal, print.ribbon = TRUE, print.hex = FALSE)
 }
 \arguments{
 \item{theme}{Theme of the palette. A string corresponding to one of the 31 themes available in RStudio (see Details).
@@ -19,6 +19,10 @@ If not specified, the function tries to retrieve the active theme using \pkg{rst
 \item{n}{Number of colors to return. Currently limited to 5.}
 
 \item{pal}{A color palette as returned by \code{get_pal}.}
+
+\item{print.ribbon}{Logical stating whether a ribbon with the name of the palette should be added to the plot (default \code{TRUE}).}
+
+\item{print.hex}{Logical stating whether the hexadecimal code of each color should be added to the plot (default \code{FALSE}).}
 }
 \value{
 A vector of hexadecimal colors with additional attributes.
@@ -48,7 +52,7 @@ get_pal()
 
 list_pal()
 my_pal <- get_pal(theme = "Twilight")
-viz_pal(my_pal)
+viz_pal(my_pal, print.hex = TRUE)
 
 par(mfrow = c(7, 5))
 for(i in list_pal()) {viz_pal(get_pal(i))}

@@ -19,6 +19,6 @@ Colors were extracted from the CSS file of each theme
 rs_pal_data
 }
 \description{
-A dataset containing the hexadecimal colors of various syntax items for 31 RStudio editor themes.
+A dataset containing the hexadecimal colors of various items for 31 RStudio editor themes.
 }
 \keyword{datasets}

@@ -10,6 +10,8 @@
 #' If not specified, the function tries to retrieve the active theme using \pkg{rstudioapi}.
 #' @param n Number of colors to return. Currently limited to 5.
 #' @param pal A color palette as returned by \code{get_pal}.
+#' @param print.ribbon Logical stating whether a ribbon with the name of the palette should be added to the plot (default \code{TRUE}).
+#' @param print.hex Logical stating whether the hexadecimal code of each color should be added to the plot (default \code{FALSE}).
 #'
 #' @details The available themes are:
 #' \code{Ambiance}, \code{Chaos}, \code{Chrome}, \code{Clouds}, \code{Clouds Midnight}, \code{Cobalt},

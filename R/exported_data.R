@@ -1,7 +1,7 @@
 
 #' Palettes for RStudio editor themes
 #'
-#' A dataset containing the hexadecimal colors of various syntax items for 31 RStudio editor themes.
+#' A dataset containing the hexadecimal colors of various items for 31 RStudio editor themes.
 #'
 #' @format A data frame with 4 columns.
 #' \describe{
