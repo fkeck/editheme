@@ -17,22 +17,36 @@ list_pal()
 
 Get one specific palette with get_pal and visualize it with viz_pal:
 
-my_pal <- get_pal(theme = "Twilight")
-viz_pal(my_pal, print.hex = TRUE)
+    my_pal <- get_pal(theme = "Twilight")
+    viz_pal(my_pal, print.hex = TRUE)
 
 get_pal is smart, if you are using RStudio, it can find automatically the palette matching your current theme using rstudioapi, just type:
-get_pal()
+
+    get_pal()
 
 ### Customizing base graphics
 To change the look of base graphics editheme uses the styles package.
-The function set_base_sty modifies the graphical parameters and the behavior of different generic plotting functions.
+The function set_base_sty modifies the graphical parameters and the behavior of different
+generic plotting functions according to the selected theme.
 
-set_base_sty("Tomorrow Night", 3)
-hist(rnorm(100))
-plot(iris$Sepal.Length, iris$Petal.Length)
-barplot(1:5, names.arg = LETTERS[1:5])
-boxplot(iris$Sepal.Length ~ iris$Species)
-image(volcano)
+    set_base_sty("Tomorrow Night", 3)
+    hist(rnorm(100))
+    plot(iris$Sepal.Length, iris$Petal.Length)
+    barplot(1:5, names.arg = LETTERS[1:5])
+    boxplot(iris$Sepal.Length ~ iris$Species)
+    image(volcano)
 
 ### Customizing ggplot2 graphics
-ggplot2 integrates a system of 
+The package provides a ggplot2 theme function theme_editor and scales functions
+(scale_color_editor, scale_fill_editor) to control the appearance of the plot.
+
+    ggplot(iris, aes(Sepal.Length, Petal.Length, color = Species)) +
+    geom_point() +
+    labs(title = "Edgar Anderson's Iris Data",
+      subtitle = "This is a demo", caption = "This is a caption") +
+    theme_editor() +
+    scale_color_editor()
+
+
+
+
