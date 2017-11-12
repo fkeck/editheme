@@ -12,24 +12,26 @@
 #'
 #' @examples
 #'
-#' df <- data.frame(
-#' gp = factor(rep(letters[1:3], each = 10)),
-#' y = rnorm(30)
-#' )
 #'
-#' ggplot(df, aes(gp, y, color = gp, fill = gp)) +
-#'   geom_boxplot(color = col_fg(fade = 0.2)) +
-#'   labs(title = "A nice plot", subtitle = "This is a demo of edistyle") +
-#'   facet_wrap(~gp) +
+#' ggplot(iris, aes(Sepal.Length, Petal.Length, color = Species)) +
+#'   geom_point() +
+#'   labs(title = "Edgar Anderson's Iris Data", subtitle = "This is a demo", caption = "This is a caption") +
 #'   theme_editor() +
-#'   scale_fill_editor()
+#'   scale_color_editor()
 #'
 #' ggplot(iris, aes(Sepal.Length, Petal.Length)) +
 #'   geom_point(color = col_fg(fade = 0.2)) +
 #'   geom_smooth(color = get_pal()[1], fill = get_pal()[2]) +
-#'   labs(title = "Edgar Anderson's Iris Data", subtitle = "This is a demo", caption = "edistyle v.0.1.0") +
+#'   labs(title = "Edgar Anderson's Iris Data", subtitle = "This is a demo", caption = "This is a caption") +
+#'   theme_editor()
+#'
+#' ggplot(iris, aes(Sepal.Length, Petal.Length, color = Species)) +
+#'   geom_point() +
+#'   labs(title = "Facet wrap") +
+#'   facet_wrap(~Species) +
 #'   theme_editor() +
-#'   scale_fill_editor()
+#'   scale_color_editor()
+#'
 #'
 #' for(i in list_pal()){
 #'  p <- ggplot(iris, aes(Sepal.Length, Petal.Length)) +

@@ -17,7 +17,7 @@
 #' set_base_sty("Tomorrow Night", 3)
 #' hist(rnorm(100))
 #' plot(iris$Sepal.Length, iris$Petal.Length)
-#' barplot(1:5, names.arg = LETTERS[1:5])
+#' barplot(1:10, names.arg = LETTERS[1:10])
 #' boxplot(iris$Sepal.Length ~ iris$Species)
 #' image(volcano)
 #'
