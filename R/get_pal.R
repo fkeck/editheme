@@ -50,7 +50,7 @@ get_pal <- function(theme = NA, n){
   theme <- match.arg(theme, list_pal())
   rules <- c("keyword", "operator", "const_lang", "string", "comment")
 
-  rs_pal_data <- edistyle::rs_pal_data
+  rs_pal_data <- editheme::rs_pal_data
   sel_theme <- rs_pal_data[rs_pal_data[["theme_name"]] == theme, ]
 
   pal <- sel_theme[match(rules, rs_pal_data[["rule"]]), ][["value"]]
@@ -77,7 +77,7 @@ get_pal <- function(theme = NA, n){
 #' @export
 #' @rdname color_palette
 list_pal <- function(){
-  rs_pal_data <- edistyle::rs_pal_data
+  rs_pal_data <- editheme::rs_pal_data
   unique(rs_pal_data[["theme_name"]])
 }
 

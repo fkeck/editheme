@@ -1,11 +1,12 @@
-#' edistyle
+#' editheme
 #'
 #' @importFrom rstudioapi getThemeInfo
-#' @importFrom scales alpha
+#' @importFrom scales alpha manual_pal
 #' @importFrom styles new_style
 #' @importFrom grDevices col2rgb colorRampPalette rgb
 #' @importFrom graphics image par rect text
+#' @importFrom ggplot2 discrete_scale theme_classic element_rect element_line element_text
 #'
-#' @name edistyles
+#' @name editheme
 #' @docType package
 NULL

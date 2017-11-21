@@ -68,7 +68,7 @@ dreamweaver,Dreamweaver,background,#FFFFFF
 dreamweaver,Dreamweaver,base_text,#000000
 dreamweaver,Dreamweaver,keyword,#0000FF
 dreamweaver,Dreamweaver,operator,#687687
-dreamweaver,Dreamweaver,string,#0000FF
+dreamweaver,Dreamweaver,string,#729FCF
 eclipse,Eclipse,comment,#719682
 eclipse,Eclipse,const_lang,#000000
 eclipse,Eclipse,background,#FFFFFF
@@ -76,8 +76,8 @@ eclipse,Eclipse,base_text,#000000
 eclipse,Eclipse,keyword,#800080
 eclipse,Eclipse,operator,#888888
 eclipse,Eclipse,string,#2A00FF
-idle_fingers,Idle Fingers,comment,#BC9458
-idle_fingers,Idle Fingers,const_lang,#6C99BB
+idle_fingers,Idle Fingers,comment,#6C99BB
+idle_fingers,Idle Fingers,const_lang,#BC9458
 idle_fingers,Idle Fingers,background,#323232
 idle_fingers,Idle Fingers,base_text,#FFFFFF
 idle_fingers,Idle Fingers,keyword,#CC7833
@@ -140,7 +140,7 @@ pastel_on_dark,Pastel On Dark,keyword,#757AD8
 pastel_on_dark,Pastel On Dark,operator,#AAAAAA
 pastel_on_dark,Pastel On Dark,string,#66A968
 solarized_dark,Solarized Dark,comment,#657B83
-solarized_dark,Solarized Dark,const_lang,#B58900
+solarized_dark,Solarized Dark,const_lang,#D33682
 solarized_dark,Solarized Dark,background,#002B36
 solarized_dark,Solarized Dark,base_text,#93A1A1
 solarized_dark,Solarized Dark,keyword,#859900
@@ -151,7 +151,7 @@ solarized_light,Solarized Light,const_lang,#B58900
 solarized_light,Solarized Light,background,#FDF6E3
 solarized_light,Solarized Light,base_text,#586E75
 solarized_light,Solarized Light,keyword,#859900
-solarized_light,Solarized Light,operator,#93A1A1
+solarized_light,Solarized Light,operator,#D33682
 solarized_light,Solarized Light,string,#2AA198
 textmate,TextMate,comment,#4C886B
 textmate,TextMate,const_lang,#585CF6
@@ -210,7 +210,7 @@ vibrant_ink,Vibrant Ink,keyword,#FF6600
 vibrant_ink,Vibrant Ink,operator,#AAAAAA
 vibrant_ink,Vibrant Ink,string,#66FF00
 xcode,Xcode,comment,#008E00
-xcode,Xcode,const_lang,#C800A4
+xcode,Xcode,const_lang,#3A00DC
 xcode,Xcode,background,#FFFFFF
 xcode,Xcode,base_text,#000000
 xcode,Xcode,keyword,#C800A4
