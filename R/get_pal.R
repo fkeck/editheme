@@ -105,6 +105,16 @@ viz_pal <- function(pal, print.ribbon = TRUE, print.hex = FALSE){
 }
 
 
+
+#' Title
+#'
+#' @param theme A string corresponding to one of the 31 themes available in RStudio (see \code{\link{list_pal}}).
+#' If not specified, the function tries to retrieve the active theme using \pkg{rstudioapi}.
+#' @param fade A numeric value from 0 to 1. How much the color should be faded (in the background/foreground color).
+#'
+#' @return A color (hexadecimal format).
+#' @export
+#' @rdname bg_fg_col
 col_bg <- function(theme = NA, fade = 0){
   pal <- get_pal(theme = theme)
   col_bg <- attr(pal, "background")
@@ -114,6 +124,8 @@ col_bg <- function(theme = NA, fade = 0){
   return(res)
 }
 
+#' @export
+#' @rdname bg_fg_col
 col_fg <- function(theme = NA, fade = 0){
   pal <- get_pal(theme = theme)
   col_bg <- attr(pal, "background")

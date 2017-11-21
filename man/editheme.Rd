@@ -2,8 +2,8 @@
 % Please edit documentation in R/editheme-package.R
 \docType{package}
 \name{editheme}
-\alias{edithemes}
-\alias{edithemes-package}
+\alias{editheme}
+\alias{editheme-package}
 \title{editheme}
 \description{
 editheme

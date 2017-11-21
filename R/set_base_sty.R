@@ -13,6 +13,7 @@
 #' \dontrun{
 #' set_base_sty()
 #' }
+#' require(default)
 #'
 #' set_base_sty("Tomorrow Night", 3)
 #' hist(rnorm(100))

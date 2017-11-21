@@ -1,3 +1,5 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^colors_raw$
+^README\.Rmd$
+^README-.*\.png$
