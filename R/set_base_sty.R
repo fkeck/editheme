@@ -80,6 +80,7 @@ set_base_sty <- function(theme = NA, variation = 2){
                               image.default = list(col = colorRampPalette(c(col_bg, col_data))(12)),
                               contour.default = list(col = col_data),
                               dotchart = list(color = col_data, pch = 20, lcolor = par("fg")),
+                              pie = list(col = col_data, border = col_bg),
                               title = list(line = 2)))
 
   styles::style(ed_sty)
