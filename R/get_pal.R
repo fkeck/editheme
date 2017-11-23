@@ -70,9 +70,17 @@ get_pal <- function(theme = NA, n){
   attr(pal, "rules") <- rules
   attr(pal, "background") <- sel_theme[sel_theme$rule == "background", "value"]
   attr(pal, "base_text") <- sel_theme[sel_theme$rule == "base_text", "value"]
+  class(pal) <- "edipal"
   return(pal)
 }
 
+print.edipal <- function(x, ...){
+  print(as.vector(x))
+  cat("\n")
+  cat("Palette for the theme:", attr(x, "theme"), "\n")
+  cat("Foreground:", attr(x, "base_text"), "\n")
+  cat("Background:", attr(x, "background"))
+}
 
 #' @export
 #' @rdname color_palette
