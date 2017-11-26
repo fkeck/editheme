@@ -14,5 +14,6 @@ Imports:
     rstudioapi,
     scales,
     styles,
-    ggplot2,
+    ggplot2
+Depends:
     default
