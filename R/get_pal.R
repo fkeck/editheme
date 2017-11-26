@@ -74,6 +74,12 @@ get_pal <- function(theme = NA, n){
   return(pal)
 }
 
+#' Print method for color palette
+#'
+#' @param x the palette to be printed.
+#' @param ... further arguments to be passed to or from other methods. They are ignored in this function.
+#' @export
+#'
 print.edipal <- function(x, ...){
   print(as.vector(x))
   cat("\n")
@@ -114,17 +120,21 @@ viz_pal <- function(pal, print.ribbon = TRUE, print.hex = FALSE){
 
 
 
-#' Title
+#' Get foreground and background colors
 #'
-#' @param theme A string corresponding to one of the 31 themes available in RStudio (see \code{\link{list_pal}}).
-#' If not specified, the function tries to retrieve the active theme using \pkg{rstudioapi}.
+#' @param x A color palette as returned by \code{get_pal} or a string corresponding to one of the 31 themes available in RStudio (see \code{\link{list_pal}}).
+#' If NA, the function tries to retrieve the active theme using \pkg{rstudioapi}.
 #' @param fade A numeric value from 0 to 1. How much the color should be faded (in the background/foreground color).
 #'
 #' @return A color (hexadecimal format).
 #' @export
 #' @rdname bg_fg_col
-col_bg <- function(theme = NA, fade = 0){
-  pal <- get_pal(theme = theme)
+col_bg <- function(x = NA, fade = 0){
+  if(class(x) == "edipal"){
+    pal <- x
+  } else {
+    pal <- get_pal(theme = x)
+  }
   col_bg <- attr(pal, "background")
   col_fg <- attr(pal, "base_text")
   res <- (col2rgb(col_bg) * (1 - fade)) + (col2rgb(col_fg) * fade)
@@ -134,8 +144,12 @@ col_bg <- function(theme = NA, fade = 0){
 
 #' @export
 #' @rdname bg_fg_col
-col_fg <- function(theme = NA, fade = 0){
-  pal <- get_pal(theme = theme)
+col_fg <- function(x = NA, fade = 0){
+  if(class(x) == "edipal"){
+    pal <- x
+  } else {
+    pal <- get_pal(theme = x)
+  }
   col_bg <- attr(pal, "background")
   col_fg <- attr(pal, "base_text")
   res <- (col2rgb(col_fg) * (1 - fade)) + (col2rgb(col_bg) * fade)
