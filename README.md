@@ -9,6 +9,8 @@ editheme
 
 The package editheme provides a collection of color palettes designed to match the different themes available in RStudio. It also includes functions to customize 'base' and 'ggplot2' graphs styles in order to harmonize the look of your favorite IDE.
 
+![](man/figures/demo_editheme.gif)
+
 ### Install
 
 To install the package from Gihub you can use devtools:
@@ -40,13 +42,13 @@ list_pal()
 #> [19] "Monokai"               "Pastel On Dark"       
 #> [21] "Solarized Dark"        "Solarized Light"      
 #> [23] "TextMate"              "Tomorrow"             
-#> [25] "Tomorrow Night"        "Tomorrow Night 80s"   
-#> [27] "Tomorrow Night Blue"   "Tomorrow Night Bright"
+#> [25] "Tomorrow Night"        "Tomorrow Night Blue"  
+#> [27] "Tomorrow Night Bright" "Tomorrow Night 80s"   
 #> [29] "Twilight"              "Vibrant Ink"          
 #> [31] "Xcode"
 ```
 
-Get one specific palette with get\_pal and visualize it with viz\_pal:
+Get one specific palette with `get_pal` and visualize it with `viz_pal`:
 
 ``` r
 my_pal <- get_pal(theme = "Twilight")
@@ -75,23 +77,21 @@ plot(iris$Sepal.Length, iris$Petal.Length)
 barplot(1:9, names.arg = LETTERS[1:9])
 boxplot(iris$Sepal.Length ~ iris$Species)
 image(volcano)
-contour(volcano)
 ```
 
 ![](man/figures/README-unnamed-chunk-8-1.png)
 
 ### Customizing ggplot2 graphics
 
-The package provides a ggplot2 theme function theme\_editor and scales functions (scale\_color\_editor, scale\_fill\_editor) to control the appearance of the plot.
+The package provides a ggplot2 theme function `theme_editor` and scales functions (`scale_color_editor`, `scale_fill_editor`) to control the appearance of the plot.
 
 ``` r
 library(ggplot2)
 pal <- get_pal(theme = "Clouds Midnight")
 
 ggplot(iris, aes(Sepal.Length, Petal.Length)) +
-  geom_point(color = col_fg("Clouds Midnight", fade = 0.2)) +
-  geom_smooth(color = pal[1],
-              fill = pal[2]) +
+  geom_point(color = col_fg(pal, fade = 0.2)) +
+  geom_smooth(color = pal[1], fill = pal[2]) +
   labs(title = "Edgar Anderson's Iris Data",
     subtitle = "This is a demo", caption = "This is a caption") +
   theme_editor("Clouds Midnight")

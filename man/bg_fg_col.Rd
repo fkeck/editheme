@@ -3,15 +3,15 @@
 \name{col_bg}
 \alias{col_bg}
 \alias{col_fg}
-\title{Title}
+\title{Get foreground and background colors}
 \usage{
-col_bg(theme = NA, fade = 0)
+col_bg(x = NA, fade = 0)
 
-col_fg(theme = NA, fade = 0)
+col_fg(x = NA, fade = 0)
 }
 \arguments{
-\item{theme}{A string corresponding to one of the 31 themes available in RStudio (see \code{\link{list_pal}}).
-If not specified, the function tries to retrieve the active theme using \pkg{rstudioapi}.}
+\item{x}{A color palette as returned by \code{get_pal} or a string corresponding to one of the 31 themes available in RStudio (see \code{\link{list_pal}}).
+If NA, the function tries to retrieve the active theme using \pkg{rstudioapi}.}
 
 \item{fade}{A numeric value from 0 to 1. How much the color should be faded (in the background/foreground color).}
 }
@@ -19,5 +19,5 @@ If not specified, the function tries to retrieve the active theme using \pkg{rst
 A color (hexadecimal format).
 }
 \description{
-Title
+Get foreground and background colors
 }
