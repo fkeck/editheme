@@ -3,3 +3,4 @@
 ^colors_raw$
 ^README\.Rmd$
 ^README-.*\.png$
+^rstudio_css$

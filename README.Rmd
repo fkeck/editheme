@@ -76,6 +76,7 @@ boxplot(iris$Sepal.Length ~ iris$Species)
 image(volcano)
 ```
 
+Tip: Just like `get_pal`, `set_base_sty` is smart. If you are using RStudio, it can find automatically your current theme. Just type: `set_base_sty()`
 
 ### Customizing ggplot2 graphics
 The package provides a ggplot2 theme function `theme_editor` and scales functions
@@ -101,6 +102,7 @@ ggplot(iris, aes(Sepal.Length, Petal.Length, color = Species)) +
 ```
 
 
+Tip: ggplot2 theme functions can find automatically your current theme. Just type: `theme_editor()`, `scale_color_editor()`, etc...
 
 
 

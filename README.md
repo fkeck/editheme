@@ -79,6 +79,8 @@ image(volcano)
 
 ![](man/figures/README-unnamed-chunk-8-1.png)
 
+Tip: Just like `get_pal`, `set_base_sty` is smart. If you are using RStudio, it can find automatically your current theme. Just type: `set_base_sty()`
+
 ### Customizing ggplot2 graphics
 
 The package provides a ggplot2 theme function `theme_editor` and scales functions (`scale_color_editor`, `scale_fill_editor`) to control the appearance of the plot.
@@ -109,3 +111,5 @@ ggplot(iris, aes(Sepal.Length, Petal.Length, color = Species)) +
 ```
 
 ![](man/figures/README-unnamed-chunk-9-2.png)
+
+Tip: ggplot2 theme functions can find automatically your current theme. Just type: `theme_editor()`, `scale_color_editor()`, etc...
