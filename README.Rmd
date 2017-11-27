@@ -12,7 +12,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-[![Travis Build Status](https://travis-ci.org/xxx)](https://travis-ci.org/fkeck/editheme)
+
 
 # editheme
 

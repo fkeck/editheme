@@ -1,7 +1,5 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-[![Travis Build Status](https://travis-ci.org/xxx)](https://travis-ci.org/fkeck/editheme)
-
 editheme
 ========
 
@@ -26,7 +24,7 @@ library(editheme)
 
 ### Palettes
 
-Print the list of available palettes with list\_pal:
+Print the list of available palettes with `list_pal`:
 
 ``` r
 list_pal()
@@ -57,7 +55,7 @@ viz_pal(my_pal, print.hex = TRUE)
 
 ![](man/figures/README-unnamed-chunk-5-1.png)
 
-get\_pal is smart, if you are using RStudio, it can find automatically the palette matching your current theme using rstudioapi, just type:
+`get_pal` is smart, if you are using RStudio, it can find automatically the palette matching your current theme using rstudioapi, just type:
 
 ``` r
 get_pal()
@@ -67,7 +65,7 @@ get_pal()
 
 ### Customizing base graphics
 
-To change the look of base graphics editheme uses the styles package. The function set\_base\_sty modifies the graphical parameters and the behavior of different generic plotting functions according to the selected theme.
+To change the look of base graphics editheme uses the styles package. The function `set_base_sty` modifies the graphical parameters and the behavior of different plotting functions according to the selected theme.
 
 ``` r
 set_base_sty("Clouds Midnight")
