@@ -25,6 +25,8 @@ The package editheme provides a collection of color palettes designed to match t
 To install the package from Gihub you can use devtools:
 
 ```{r, eval = FALSE}
+#editheme use the package styles to customize base plots
+devtools::install_github("ropenscilabs/styles")
 devtools::install_github("fkeck/editheme")
 ```
 

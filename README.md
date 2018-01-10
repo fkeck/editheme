@@ -14,11 +14,14 @@ The package editheme provides a collection of color palettes designed to match t
 To install the package from Gihub you can use devtools:
 
 ``` r
+#editheme use the package styles to customize base plots
+devtools::install_github("ropenscilabs/styles")
 devtools::install_github("fkeck/editheme")
 ```
 
 ``` r
 library(default)
+#> Warning: package 'default' was built under R version 3.3.3
 library(editheme)
 ```
 
@@ -87,6 +90,7 @@ The package provides a ggplot2 theme function `theme_editor` and scales function
 
 ``` r
 library(ggplot2)
+#> Warning: package 'ggplot2' was built under R version 3.3.3
 pal <- get_pal(theme = "Clouds Midnight")
 
 ggplot(iris, aes(Sepal.Length, Petal.Length)) +
