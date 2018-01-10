@@ -4,8 +4,9 @@ Title: Color Palettes and Themes for RStudio
 Version: 0.1.0
 Author: Francois Keck <francois.keck@gmail.com>
 Maintainer: Francois Keck <francois.keck@gmail.com>
-Description: Collection of color palettes designed to match the different themes available in RStudio. Includes 31 color palettes
-    and functions to customize 'base' and 'ggplot2' graphs styles.
+Description: Collection of color palettes designed to match the different themes
+    available in RStudio. Includes 31 color palettes and functions to customize
+    'base' and 'ggplot2' graphs styles.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
