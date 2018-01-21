@@ -22,7 +22,7 @@ The package editheme provides a collection of color palettes designed to match t
 ![](man/figures/demo_editheme.gif)
 
 ### Install
-To install the package from Gihub you can use devtools:
+To install the package from Github you can use devtools:
 
 ```{r, eval = FALSE}
 #editheme use the package styles to customize base plots
