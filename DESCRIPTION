@@ -18,3 +18,4 @@ Imports:
     ggplot2
 Depends:
     default
+Remotes: ropenscilabs/styles
