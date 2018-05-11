@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 output: github_document
 ---
@@ -220,4 +219,3 @@ Tip: ggplot2 theme functions can find automatically your current theme. Just typ
 
 
 
->>>>>>> c6b0d50d71fc67170f81402f3b874fe57d5ace74
